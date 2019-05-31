@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]">
+  <test name="Test(failed)" preserve-order="true">
+    <classes>
+      <class name="com.testcases.Login_test">
+        <methods>
+          <include name="verify_login"/>
+        </methods>
+      </class> <!-- com.testcases.Login_test -->
+      <class name="com.testcases.EM_test">
+        <methods>
+          <include name="verify_Employee_creation"/>
+        </methods>
+      </class> <!-- com.testcases.EM_test -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
