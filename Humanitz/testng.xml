@@ -3,8 +3,18 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
+      <class name="com.testcases.EM_search_test"/>
       <class name="com.testcases.Login_test"/>
-      <class name="com.testcases.EM_test"/>
+      <class name="com.testcases.Employee_acessories_test"/>
+      <class name="com.testcases.EM_status_test"/>
+     
+      <class name="com.testcases.EM_test">
+      
+      <methods>
+      <exclude name="">
+      </exclude>
+      </methods>
+      </class>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

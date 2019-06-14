@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]">
-  <test name="Default test(failed)" preserve-order="true">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.testcases.Login_test">
+      <class name="com.testcases.EM_search_test">
         <methods>
-          <include name="verify_login"/>
+          <include name="verify_employee_search"/>
         </methods>
-      </class> <!-- com.testcases.Login_test -->
+      </class> <!-- com.testcases.EM_search_test -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

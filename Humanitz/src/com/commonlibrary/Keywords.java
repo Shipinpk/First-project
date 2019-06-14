@@ -85,6 +85,14 @@ public class Keywords {
 	}
 	
 	
+	public static void get_attribute(String locator,String value)
+	{
+		WebElement element=BrowserDrivers.driver.findElement(By.xpath(locator));
+		
+		String text=element.getAttribute(value);
+		//System.out.println(text);
+	}
+	
 	
 	
 	

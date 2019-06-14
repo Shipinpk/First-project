@@ -11,7 +11,7 @@ public class Browser {
 	
 	public static void open_chrome_browser()
 	{
-		System.setProperty("webdriver.chrome.driver","C:\\Users\\user\\workspace\\simple\\chrome\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver","C:\\Users\\DELL\\First-project\\Humanitz\\chrome\\chromedriver.exe");
 		
 		ChromeOptions options=new ChromeOptions();
 		options.addArguments("disable-infobars");

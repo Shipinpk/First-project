@@ -2,6 +2,8 @@ package com.inputdata;
 
 public class EM_data {
 	
+	public static String em_ref_code="TE99";
+	
 	public static String first_name="shipin";
 	
 	public static String middle_name="p";
