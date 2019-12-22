@@ -1,6 +1,7 @@
 package com.projectlibrary;
 
 import com.commonlibrary.Keywords;
+import com.configration.BrowserDrivers;
 import com.inputdata.EM_data;
 import com.locators.EM_elements;
 
@@ -15,6 +16,9 @@ public class EmployeeMaster {
 		
 		Keywords.wait_for_xpath(EM_elements.newbutton);
 		Keywords.click_elements(EM_elements.newbutton);
+		
+		Keywords.wait_for_xpath(EM_elements.refernce_code);
+		Keywords.enter_text(EM_elements.refernce_code,EM_data.reference_code);
 
 		Keywords.wait_for_xpath(EM_elements.first_name);
 		Keywords.enter_text(EM_elements.first_name,EM_data.first_name);
@@ -58,8 +62,10 @@ public class EmployeeMaster {
 		
 		Keywords.calendar_click(EM_elements.date_of_expiry_calendar,EM_data.date_of_expiry_month,EM_elements.date_of_expiry_next_button,EM_elements.date_of_expiry_calendar_day,EM_data.date_of_expiry_day);
 		
-		//Keywords.wait_for_xpath(EM_elements.save_button);
-		//Keywords.click_elements(EM_elements.save_button);
+		Keywords.wait_for_xpath(EM_elements.save_button);
+		Keywords.click_elements(EM_elements.save_button);
+		
+		BrowserDrivers.driver.switchTo().alert().accept();
 		
 	}
 

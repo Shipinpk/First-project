@@ -14,18 +14,18 @@ import com.configration.BrowserDrivers;
 
 public class Keywords {
 
-	public static void enter_text(String locator,String text)
+	public static void enterText(String locator,String text)
 	{
 		BrowserDrivers.driver.findElement(By.xpath(locator)).sendKeys(text);
 	}
 
 
-	public static void click_elements(String locator)
+	public static void clickElement(String locator)
 	{
 		BrowserDrivers.driver.findElement(By.xpath(locator)).click();
 	}
 
-	public static void wait_for_xpath(String locator)
+	public static void waitForXpathPresent(String locator)
 	{
 		WebDriverWait wait=new WebDriverWait(BrowserDrivers.driver,120);
 		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(locator)));
@@ -39,7 +39,7 @@ public class Keywords {
 
 	}
 
-	public static void calendar_click(String calendar_name,String month,String locator,String day,String date)
+	public static void calendarClick(String calendar_name,String month,String locator,String day,String date)
 	{
 		while(!BrowserDrivers.driver.findElement(By.xpath(calendar_name)).getText().contains(month))
 		{
@@ -65,7 +65,7 @@ public class Keywords {
 	}
 	
 	
-	public static void dropdown_click(String locator,String locator1)
+	public static void dropdownClick(String locator,String locator1)
 	{
 	
 		Select select=new Select(BrowserDrivers.driver.findElement(By.xpath(locator)));
@@ -77,7 +77,7 @@ public class Keywords {
 	
 	
 	
-	public static void sendkeys_dropdown(String locator,String value,String locator1)
+	public static void sendkeysDropdown(String locator,String value,String locator1)
 	{
 		BrowserDrivers.driver.findElement(By.xpath(locator)).sendKeys(value);
 		

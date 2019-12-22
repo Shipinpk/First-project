@@ -2,6 +2,8 @@ package com.inputdata;
 
 public class EM_data {
 	
+	public static String reference_code="TES01";
+	
 	public static String first_name="shipin";
 	
 	public static String middle_name="p";
@@ -39,5 +41,7 @@ public class EM_data {
 	public static String date_of_expiry_month="December, 2019";
 	
 	public static String date_of_expiry_day="21";
+	
+	public static String employee_master_expected="//*[contains(text(),'TES0012')]";
 
 }

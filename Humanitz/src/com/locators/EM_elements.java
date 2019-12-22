@@ -2,6 +2,8 @@ package com.locators;
 
 public class EM_elements {
 	
+	public static String refernce_code="//input[@id='ctl00_ContentPlaceHolder1_tp1_txtEmpCode']";
+	
 	public static String hr="//div[@id='ribbon-tab-header-4']";
 	
 	public static String employeemaster="//ul[@id='Definitions-tab4']//a[@href='../HRMS/EmployeeDetailsSearch.aspx?menuid=180']//li[@id='add-table-btn' and @class='ribbon-button ribbon-button-large']";
@@ -65,6 +67,8 @@ public class EM_elements {
 	public static String date_of_expiry_calendar_day="[class='ajax__calendar_day']";
 	
 	public static String save_button="//input[@id='ctl00_ContentPlaceHolder1_tp1_BtnSave']";
+	
+
 	
 	
 	

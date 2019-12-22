@@ -3,11 +3,6 @@
 <suite name="Failed suite [Suite]">
   <test name="Test(failed)" preserve-order="true">
     <classes>
-      <class name="com.testcases.Login_test">
-        <methods>
-          <include name="verify_login"/>
-        </methods>
-      </class> <!-- com.testcases.Login_test -->
       <class name="com.testcases.EM_test">
         <methods>
           <include name="verify_Employee_creation"/>
